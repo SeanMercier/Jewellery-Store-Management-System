@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment1.MainpageController">
+   <children>
+      <TabPane layoutX="6.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Display Case">
+              <fx:include source="Assignment1.fxml" />
+
+          </Tab>
+          <Tab text="Display Tray">
+              <fx:include source="DisplaytrayController.fxml"/>
+
+          </Tab>
+
+            <Tab text="Display Item Of Jewellery">
+                <fx:include source="IOJView.fxml"/>
+
+            </Tab>
+
+            <Tab text="Display Material">
+                <fx:include source="MaterialView.fxml"/>
+
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

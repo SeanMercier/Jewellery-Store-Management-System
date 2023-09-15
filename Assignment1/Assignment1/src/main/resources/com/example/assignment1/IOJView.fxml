@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment1.IOJController">
+    <top>
+        <VBox prefHeight="142.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox spacing="10.0">
+                    <children>
+                        <TextField fx:id="IOJname" promptText="Item Of Jewellery Description" />
+                        <TextField fx:id="textiojprice" promptText="Enter Price" />
+                        <ComboBox fx:id="popdcaseioj" onMouseEntered="#populatedisplaycaseioj" prefWidth="150.0" promptText="Corresponding Case" />
+                        <ComboBox fx:id="popdtrayioj" onMouseEntered="#populatetraycase" promptText="Corresponding Tray" />
+                        <Region HBox.hgrow="ALWAYS" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                    </VBox.margin>
+                </HBox>
+            <HBox prefHeight="33.0" prefWidth="700.0">
+               <children>
+                      <ComboBox fx:id="cboxgender" prefWidth="150.0" promptText="Gender">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                      <ComboBox fx:id="cboxtype2" prefWidth="150.0" promptText="Type">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                   <TextField fx:id="urltextfield" promptText="Insert image url" />
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="700.0">
+               <children>
+                        <Button fx:id="addbutton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#addIOJ" text="Add">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                        <Button fx:id="deleteiojbutton" mnemonicParsing="false" onAction="#deleteIOJ" text="Delete">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="viewStockValue" mnemonicParsing="false" onAction="#viewStockValue" text="View Stock Value">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label fx:id="lblvtotalvalue" text="Stock value">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="txtfieldsearchioj" onAction="#searchIOJ" promptText="Search Item of Jewellery">
+                     <HBox.margin>
+                        <Insets left="20.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#searchIOJ" text="Find">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <HBox BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+            </padding>
+         <children>
+            <ListView fx:id="searchediojlist" prefHeight="125.0" prefWidth="694.0">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin></ListView>
+         </children>
+        </HBox>
+    </bottom>
+    <center>
+        <ListView fx:id="lstItemofj" prefHeight="200.0" prefWidth="700.0" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>

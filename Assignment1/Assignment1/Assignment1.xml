@@ -1,0 +1,80 @@
+<object-stream>
+  <com.example.assignment1.DisplayCaseList>
+    <head>
+      <contents class="com.example.assignment1.DisplayCase">
+        <casename>test</casename>
+        <type>Wall</type>
+        <lighting>true</lighting>
+        <displaytrays>
+          <head>
+            <contents class="com.example.assignment1.DisplayTray">
+              <displayiojs>
+                <head>
+                  <contents class="com.example.assignment1.ItemOfJewellery">
+                    <displaymats/>
+                    <itemDescription>test3</itemDescription>
+                    <type>Ring</type>
+                    <gender>Male</gender>
+                    <retailprice>6.0</retailprice>
+                    <image></image>
+                  </contents>
+                </head>
+              </displayiojs>
+              <trayIdentifier>test2</trayIdentifier>
+              <trayColor>0xb3b3b3ff</trayColor>
+              <trayWidth>60</trayWidth>
+              <trayHeight>10</trayHeight>
+            </contents>
+            <nextNode>
+              <contents class="com.example.assignment1.DisplayTray">
+                <displayiojs>
+                  <head>
+                    <contents class="com.example.assignment1.ItemOfJewellery">
+                      <displaymats/>
+                      <itemDescription>test5</itemDescription>
+                      <type>Ring</type>
+                      <gender>Male</gender>
+                      <retailprice>6.0</retailprice>
+                      <image></image>
+                    </contents>
+                    <nextNode>
+                      <contents class="com.example.assignment1.ItemOfJewellery">
+                        <displaymats>
+                          <head>
+                            <contents class="com.example.assignment1.Material">
+                              <matname>Gold</matname>
+                              <matdescription>testtt</matdescription>
+                              <matquantity>46.0</matquantity>
+                              <matquality>1</matquality>
+                            </contents>
+                            <nextNode>
+                              <contents class="com.example.assignment1.Material">
+                                <matname>Gold</matname>
+                                <matdescription>testtt</matdescription>
+                                <matquantity>46.0</matquantity>
+                                <matquality>1</matquality>
+                              </contents>
+                            </nextNode>
+                          </head>
+                        </displaymats>
+                        <itemDescription>testt</itemDescription>
+                        <type>Ring</type>
+                        <gender>Male</gender>
+                        <retailprice>65.0</retailprice>
+                        <image></image>
+                      </contents>
+                    </nextNode>
+                  </head>
+                </displayiojs>
+                <trayIdentifier>test1</trayIdentifier>
+                <trayColor>0xb3b3b3ff</trayColor>
+                <trayWidth>60</trayWidth>
+                <trayHeight>10</trayHeight>
+              </contents>
+            </nextNode>
+          </head>
+        </displaytrays>
+      </contents>
+    </head>
+  </com.example.assignment1.DisplayCaseList>
+</object-stream>
